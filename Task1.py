@@ -6,9 +6,13 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error , r2_score
 data = pd.read_csv('student_scores.csv')
-model =LinearRegression()
 x = data[['Hours']]
 y= data.Scores
+plt.scatter(x, y)
+plt.xlabel('Hours')
+plt.ylabel('Scores')
+plt.show()
+model =LinearRegression()
 xtrain,xtest,ytrain,ytest = train_test_split(x,y,test_size=0.25)
 model.fit(xtrain.values,ytrain.values)
 ypredic = model.predict(xtest.values)
