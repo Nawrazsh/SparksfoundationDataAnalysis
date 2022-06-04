@@ -1,5 +1,5 @@
 # SparksfoundationDataAnalysis
-Tasks for the internship program :
+Tasks for Spark internship Data and business analitics program :
 1) Task 1 : 
     -About: prediction of Students mark percintage based on the number of study hours. 
     -Model used: Linear regression model
